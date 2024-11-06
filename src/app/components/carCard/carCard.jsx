@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import styles from "./CarCard.module.css";
+import styles from "./carCard.module.css";
 
 export default function CarCard({ car }) {
 
