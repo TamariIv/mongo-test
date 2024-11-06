@@ -1,7 +1,8 @@
 import { MongoClient, ObjectId } from "mongodb";
 
 export async function connectDatabase() {
-    const dbConnection: any = "mongodb+srv://taivgi:CZBIL8d8RnJvXcND@cluster0.cvnjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const dbConnection: any = process.env.PUBLIC_DB_CONNECTION;
+    console. log("---------------", dbConnection);
     return await MongoClient.connect(dbConnection);
 }
 
